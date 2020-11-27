@@ -68,10 +68,10 @@ int main(void) {
 		for (int j = 0; j < n2; j++) {
 			if (a[i][j] == b[i][j]) {
 				if (a[j][i] != b[j][i]) {
-					fprintf(graphs, "\"%d\"->\"%d\";\n", i, j);
+					fprintf(graphs, "\"%d\"->\"%d\";\n", i + 1, j + 1);
 				}
 				if (a[j][i] == b[j][i]) {
-					fprintf(graphs, "\"%d\" -- \"%d\";\n", i, j);
+					fprintf(graphs, "\"%d\" -- \"%d\";\n", i + 1, j + 1);
 					a[j][i] = -1;
 				}
 			}
