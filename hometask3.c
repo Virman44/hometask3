@@ -17,6 +17,9 @@ int main(void) {
 
 	for (int i = 0; i < n; i++) {
 		a[i] = (int*)malloc(n * sizeof(int));
+	}
+	
+	for (int i = 0; i < n1; i++) {
 		b[i] = (int*)malloc(n1 * sizeof(int));
 	}
 
